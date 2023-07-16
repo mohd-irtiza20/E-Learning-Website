@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CodeLearnings</title>
+</head>
+
+<!------------------------------------------------------------- Nav Bar ------------------------------------------------------>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient  fixed-top">
+
+        <div class=" container-fluid fw-bold">
+            <a class="navbar-brand " href="codelearnings">
+                <img src="img/logo-min.png" alt="" width="50" height="50" class="d-inline-block  align-text-center">
+                Code Learnings
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course.html">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2 m-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+
+                <div class="mx-2">
+                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------------------------------------Login Modal ------------------------------------------------------>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login To Code Learnings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2"
+                                aria-describedby="emailHelp">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword2">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                <label class="form-check-label" for="exampleCheck1"> Remember Me</label>
+
+                                <div>
+                                    <a class="bodySmall form-footer text-decoration-none"
+                                        href="/secure/146684/identity/forgot_password">Forgot Password</a>
+                                </div>
+
+                            </div>
+
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+                            <hr class="my-4">
+                            <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                                <img class="text-center" src="img/google-icon.png" width="20" height="25" alt="">
+                                Sign in with Google
+                            </button>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                                <img class="text-center" src="img/fb-icon-min.png" width="20" height="25" alt="">
+                                Sign in with Facebook
+                            </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ------------------------------------------------------SignUp Modal------------------------------------------------------------ -->
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up To Code Learnings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3">
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                        <hr class="my-4">
+
+                        <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                            <img class="text-center" src="img/google-icon.png" width="20" height="25" alt="">
+                            Sign up with Google
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                            <img class="text-center" src="img/fb-icon-min.png" width="20" height="25" alt="">
+                            Sign up with Facebook
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------NAV IMAGE------------------------------------------------------------- -->
+
+    <div class="embed-responsive embed-responsive-16by9 my-4 "></div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/img2-min.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome To Code Learning's</h5>
+                    <p class="fst-italic">Confused on which course to take? I have got you covered. Browse courses and
+                        find out the best
+                        course for you.</p>
+                    <button type="button" class="btn btn-warning"><a href="course.html"
+                            class="text-decoration-none btn-warning">Free Courses</a></button>
+                    <button type="button" class="btn btn-info"><a href="blog.html"
+                            class="text-decoration-none btn-info"> Explore Blog</a></button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/img3-min.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome To Code Learning's</h5>
+                    <p class="fst-italic">Confused on which course to take? I have got you covered. Browse courses and
+                        find out the best course for you.</p>
+                    <button type="button" class="btn btn-warning"><a href="course.html"
+                            class="text-decoration-none btn-warning">Free Courses</a></button>
+                    <button type="button" class="btn btn-info"><a href="blog.html"
+                            class="text-decoration-none btn-info"> Explore Blog</a></button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/img1-min.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome To Code Learning's</h5>
+                    <p class="fst-italic">Confused on which course to take? I have got you covered. Browse courses and
+                        find out the best course for you.</p>
+                    <button type="button" class="btn btn-warning"><a href="course.html"
+                            class="text-decoration-none btn-warning">Free Courses</a></button>
+                    <button type="button" class="btn btn-info"><a href="blog.html"
+                            class="text-decoration-none btn-info"> Explore Blog</a></button>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- ------------------------------------------------------BLOG------------------------------------------------------------- -->
+
+    <h1 class="text-center fw-bold my-5 text-black-100 ">Improve Your <span class="text-primary">Coding Skills</span>
+        <br class="text-success"> <span class="text-primary"> With </span>Live Coding Classes
+    </h1>
+    <h3 class="text-center fst-italic text-black-900">Join Our Live Sessions </h3>
+    <div class="container">
+        <div class="row my-5 justify-content-center">
+            <div class=" col-md-6 col-lg-4 d-flex mb-3">
+                <a class="card hover-shadow-sm border-none shadow shadow-3d text-decoration-none" href="#">
+
+                    <div class="flex-grow-1">
+                        <img src="img/temp1-min.png" class="card-img-top course-card p-1" alt="">
+                        <div class="card-bod d-flex flex-column">
+
+                            <div class=" p-3 text-cente">
+                                <p class="card-subtitle mb-2 text-muted">Paid</p>
+                                <h5 class="my-2 fs-5">Introduction to Java</h5>
+                                <p class="lea m-0 text-dark fw-500">Tue, 14 Jun</p>
+                                <p class="lad m-0 text-dark">Schedule: 06:00 to 07:00 PM</p>
+                                <button class="btn btn-success px-4 rounded-pill text-uppercas my-4 btn"
+                                    data-bs-toggle="modal" data-bs-target="#masterclass">Join Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class=" col-md-6 col-lg-4 d-flex mb-3">
+                <a class="card hover-shadow-sm border-none shadow shadow-3d text-decoration-none" href="#">
+
+                    <div class="flex-grow-1">
+                        <img src="img/temp2-min.png" class="card-img-top course-card p-1" alt="">
+                        <div class="card-bod d-flex flex-column">
+
+                            <div class=" p-3 text-cente">
+                                <p class="card-subtitle mb-2 text-muted">Free</p>
+                                <h5 class="my-2 fs-5">Web Development</h5>
+                                <p class="lea m-0 text-dark fw-500"> Sat, 11 Jun</p>
+                                <p class="lad m-0 text-dark">Schedule: 06:00 to 07:00 PM</p>
+                                <button class="btn btn-success px-4 rounded-pill text-uppercas my-4 btn"
+                                    data-bs-toggle="modal" data-bs-target="#masterclass">Join Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class=" col-md-6 col-lg-4 d-flex mb-3">
+                <a class="card hover-shadow-sm border-none shadow shadow-3d text-decoration-none" href="#">
+
+                    <div class="flex-grow-1">
+                        <img src="img/temp3-min.png" class="card-img-top course-card p-1" alt="">
+                        <div class="card-bod d-flex flex-column">
+
+                            <div class=" p-3 text-cente">
+                                <p class="card-subtitle mb-2 text-muted">Free</p>
+                                <h5 class="my-2 fs-5"> DSA Masterclass </h5>
+                                <p class="lea m-0 text-dark fw-500">Sat, 12 Mar</p>
+                                <p class="lad m-0 text-dark">Schedule: 06:00 to 07:00 PM</p>
+                                <button class="btn btn-success px-4 rounded-pill text-uppercas my-4 btn"
+                                    data-bs-toggle="modal" data-bs-target="#masterclass">Join Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------IMAGE-------------------------------------------------------------->
+
+    <div class="text-center">
+        <img class="center" src="img/nav-min.png" width="80%" height="400" alt="">
+
+        <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl my-4">Book your free course</h2>
+        <p class="fst-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque repudiandae cumque
+            maiores tempora reiciendis.</p>
+        <button class="btn btn-primary px-4 rounded-pill text-uppercas my-4 btn-lg fw-light" data-bs-toggle="modal"
+            data-bs-target="#masterclass">Enroll Now
+        </button>
+    </div>
+
+    <!-- ------------------------------------------------------FOOTER-------------------------------------------------------------->
+
+    <footer class=" container d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="img/logo-min.png" class="rounded my-4 h-12" width="50" height="50">
+                <span class="ml-3 text-xl">&nbsp; Code Learning</span>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 footer-column text-muted">Copyright © 2022 ! All rights reserved</div>
+        <div class="cwm-social-icons p-4">
+
+            <a href="https://www.facebook.com" target="_blank"><img src="img/fb-icon-min.png" height="32"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="img/instagram-icon-min.png" height="32"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin-icon-min.png" height="32"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter-icon-min.png" height="32"></a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
